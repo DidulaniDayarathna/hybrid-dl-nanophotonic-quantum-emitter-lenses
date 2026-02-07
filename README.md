@@ -10,9 +10,9 @@ The project focuses on leveraging **hybrid deep learning architectures** to enab
 
 ## Overview
 
-Nanophotonic lenses for quantum emitters play a critical role in improving light extraction efficiency, directionality, and collection into free space or optical systems. Conventional inverse-design techniques—while powerful—often rely on computationally expensive iterative optimization.
+Nanophotonic lenses for quantum emitters play a critical role in improving light extraction efficiency, directionality, and collection into free space or optical systems. Conventional inverse design techniques while powerful often rely on computationally expensive iterative optimization.
 
-This work introduces a **hybrid deep learning approach** that combines physics-based simulations with neural-network models to accelerate the design process while maintaining high optical performance. The framework enables rapid prediction and inverse synthesis of nanophotonic lens geometries optimized for quantum emission control.
+This work introduces a **hybrid deep learning approach** that combines physics based simulations with neural network models to accelerate the design process while maintaining high optical performance. The framework enables rapid prediction and inverse synthesis of nanophotonic lens geometries optimized for quantum emission control.
 
 ---
 
@@ -22,7 +22,7 @@ This work introduces a **hybrid deep learning approach** that combines physics-b
   Develop and evaluate hybrid deep learning models that combine classical optimization concepts with modern neural networks for nanophotonic lens design.
 
 * **Forward and Inverse Design**
-  Learn mappings between nanophotonic lens geometries and optical responses relevant to quantum emitters, including far-field directionality and collection efficiency.
+  Learn mappings between nanophotonic lens geometries and optical responses relevant to quantum emitters, including far field directionality and collection efficiency.
 
 * **Design Acceleration**
   Reduce the computational cost of lens optimization by replacing iterative solvers with fast ML-based surrogates.
