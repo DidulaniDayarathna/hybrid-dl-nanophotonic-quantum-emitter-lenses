@@ -14,7 +14,7 @@ The project uses a hybrid deep learning framework for the inverse design of nano
 
 The goal is to improve the directivity of light by generating lens geometries that would be difficult to find through computationally expensive conventional optimization techniques alone. By integrating  machine learning with adjoint optimization technique, the approach aims to generate high performing nano lens structures that are possible to fabricate. 
 
-![Alt text](docs/diagrams/Schematic representation of the forward and inverse networks-1.png)
+
 ---
 
 ## Project Objectives
