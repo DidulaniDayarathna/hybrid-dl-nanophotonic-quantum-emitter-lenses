@@ -14,7 +14,7 @@ The project uses a hybrid deep learning framework for the inverse design of nano
 
 The goal is to improve the directivity of light by generating lens geometries that would be difficult to find through computationally expensive conventional optimization techniques alone. By integrating  machine learning with adjoint optimization technique, the approach aims to generate high performing nano lens structures that are possible to fabricate. 
 
-![Alt text](docs/diagrams/f2.png)
+![Alt text](docs/diagrams/Schematic representation of the forward and inverse networks.pdf)
 ---
 
 ## Project Objectives
@@ -90,28 +90,6 @@ The goal is to improve the directivity of light by generating lens geometries th
 
 Key figures related to lens geometries, emission profiles, and model performance are provided in the **`results/`** directory.
 
-
-### Example Content
-
-* Quantum emitter lens configurations
-* Far field radiation patterns
-* Comparison between ML designed and simulation optimized lenses
-* Forward and inverse model prediction accuracy
-
-```markdown
-figures/
-├── lens_geometry_examples.png
-├── far_field_patterns.png
-├── hybrid_model_architecture.png
-├── inverse_design_results.png
-```
-
-To embed figures in this README:
-
-```markdown
-![Far-field pattern](figures/far_field_patterns.png)
-```
-
 ---
 
 ## Tech Stack
@@ -123,9 +101,8 @@ To embed figures in this README:
 
 ---
 
-## Code & Data Access
+## Data Access
 
-* **Code**: This repository contains the hybrid deep learning models, training pipelines, and evaluation scripts.
 * **Simulation Data**: Generated using FDTD and available upon reasonable request.
 * **Reuse & Collaboration**: Please contact the author for commercial use or collaborative research opportunities.
 
