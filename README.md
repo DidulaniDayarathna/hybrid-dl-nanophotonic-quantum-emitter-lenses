@@ -1,34 +1,35 @@
 # Hybrid Deep Learning for Design of Nanophotonic Quantum Emitter Lenses
 
-This repository presents the methodology and machine-learning-driven design framework associated with the research work:
+This repository presents the methodology and machine learning driven design framework associated with the research work:
 
 ***Hybrid Deep Learning for Design of Nanophotonic Quantum Emitter Lenses***.
 
-The project focuses on leveraging **hybrid deep learning architectures** to enable efficient, high-performance inverse design of nanophotonic lenses tailored for enhancing and directing emission from quantum emitters.
+The project focuses on leveraging **hybrid deep learning architectures** and **optimization** approach to design nanophotonic quantum emitter lenses that improve light emission and device performance.
 
 ---
 
 ## Overview
 
-Nanophotonic lenses for quantum emitters play a critical role in improving light extraction efficiency, directionality, and collection into free space or optical systems. Conventional inverse design techniques while powerful often rely on computationally expensive iterative optimization.
+The project uses a hybrid deep learning framework for the inverse design of nanophotonic quantum emitter lenses, combining tandem neural network approach with physics based optimization to efficiently design high performing structures. 
 
-This work introduces a **hybrid deep learning approach** that combines physics based simulations with neural network models to accelerate the design process while maintaining high optical performance. The framework enables rapid prediction and inverse synthesis of nanophotonic lens geometries optimized for quantum emission control.
+The goal is to improve the directivity of light by generating lens geometries that would be difficult to find through computationally expensive conventional optimization techniques alone. By integrating  machine learning with adjoint optimization technique, the approach aims to generate high performing nano lens structures that are possible to fabricate. 
 
+![Alt text](docs/diagrams/f2.png)
 ---
 
 ## Project Objectives
 
 * **Hybrid Model Development**
-  Develop and evaluate hybrid deep learning models that combine classical optimization concepts with modern neural networks for nanophotonic lens design.
+  Develop and evaluate hybrid deep learning models that combine conventional adjoint optimization concepts with tandem neural network approach for nanophotonic lens design.
 
 * **Forward and Inverse Design**
-  Learn mappings between nanophotonic lens geometries and optical responses relevant to quantum emitters, including far field directionality and collection efficiency.
+  Learn mappings between nanophotonic lens geometries and optical responses relevant to quantum emitters.
 
 * **Design Acceleration**
-  Reduce the computational cost of lens optimization by replacing iterative solvers with fast ML-based surrogates.
+  Reduce the computational cost of lens optimization by replacing iterative solvers with fast ML based surrogates.
 
 * **Performance Validation**
-  Validate ML-generated designs against full-wave electromagnetic simulations.
+  Validate ML generated designs against full wave electromagnetic simulations.
 
 ---
 
@@ -36,65 +37,65 @@ This work introduces a **hybrid deep learning approach** that combines physics b
 
 ### 1. Physics-Based Data Generation
 
-* **Simulation Method**: Finite-Difference Time-Domain (FDTD)
+* **Simulation Method**: Finite Difference Time Domain (FDTD)
 
 * **Electromagnetic Solver**: Meep
 
 * **Physical System**:
 
   * Quantum emitter modeled as a dipole source
-  * Nanophotonic lens structures designed to shape and collimate emitted radiation
+  * Nanophotonic lens structures designed to control the directivity of light
 
 * **Structure Representation**:
 
-  * Discretized 2D or 3D permittivity maps
-  * Geometry encoded as fixed-resolution grids suitable for neural network input
+  * Discretized 2D permittivity maps
 
 ---
 
 ### 2. Hybrid Deep Learning Framework
 
 * **Forward Models**
-  Neural networks trained to predict optical metrics (e.g., far-field intensity, numerical aperture, collection efficiency) from lens geometries.
+  Neural networks trained to predict optical metrics from lens geometries.
 
 * **Inverse Models**
-  Networks trained to generate lens designs that meet target emission characteristics.
+  Networks trained to generate lens designs that meet target emission responses.
 
 * **Hybrid Strategy**
 
-  * Dimensionality reduction and/or physics-informed constraints
-  * Coupling between forward and inverse networks to stabilize training and resolve non-unique solutions
+  * Utilizing conventional optimization technique to generate initial dataset to trian the networks.
+  * Coupling between forward and inverse networks to stabilize training and resolve non unique solutions.
 
 * **Optimization Loop**
-  ML-predicted designs are validated and refined using full-wave simulations.
+  ML predicted designs are validated and refined using full wave simulations.
 
 ---
 
 ## Key Results
 
 * **High-Performance Lens Designs**
-  The hybrid deep learning framework successfully generated nanophotonic lenses with strong directionality and enhanced collection efficiency for quantum emitters.
+  The hybrid deep learning framework successfully generated nanophotonic lenses with strong directivity and enhanced collection efficiency for quantum emitters.
 
 * **Acceleration Over Traditional Methods**
-  Design times were reduced by orders of magnitude compared to purely simulation-driven optimization.
+  Design times were reduced by orders of magnitude compared to purely simulation driven optimization.
 
 * **Robust Generalization**
-  Trained models demonstrated the ability to propose effective lens geometries across a range of emitter positions and target emission profiles.
+  Trained models demonstrated the ability to generate effective lens geometries that work for wavelength ranges outside of the training configuration region. 
 
 * **Physics Consistency**
-  ML-generated designs closely matched full-wave simulation results, confirming physical validity.
+  ML generated designs closely matched full wave simulation results, confirming physical validity.
 
 ---
 
 ## Figures and Visualizations
 
-Key figures related to lens geometries, emission profiles, and model performance are provided in the **`figures/`** directory.
+Key figures related to lens geometries, emission profiles, and model performance are provided in the **`results/`** directory.
+
 
 ### Example Content
 
-* Quantum emitter–lens configurations
-* Far-field radiation patterns
-* Comparison between ML-designed and simulation-optimized lenses
+* Quantum emitter lens configurations
+* Far field radiation patterns
+* Comparison between ML designed and simulation optimized lenses
 * Forward and inverse model prediction accuracy
 
 ```markdown
